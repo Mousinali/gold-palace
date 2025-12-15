@@ -1,0 +1,129 @@
+
+
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 5rem;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    background: #285a84;
+    z-index: 8;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: #285a84;
+    color: #fff;
+    border-color: #285a84;
+}
+
+.slick-prev:focus,
+.slick-next:focus {
+    background-color: #285a84;
+    color: #fff;
+    border-color: #285a84;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+    opacity: 1;
+    color: #fff;
+}
+
+.slick-prev.slick-disabled,
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled,
+.slick-next.slick-disabled:before {
+    opacity: .35;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 18px;
+    opacity: 1;
+    color: var(--theme-bg-color);
+}
+
+.slick-prev {
+    left: -10px;
+}
+
+.slick-prev:before {
+    content: '\EA60';
+    font-family: 'remixicon';
+    font-weight: bold;
+}
+
+.slick-next {
+    right: -10px;
+}
+
+.slick-next:before {
+    content: '\EA6C';
+    font-family: 'remixicon';
+}
+
+
+/* ------------------------------
+   DOTS — FULLY FIXED VERSION
+--------------------------------*/
+
+/* Dots container */
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fix: remove slick default numbers */
+.slick-dots li:before {
+    content: "" !important;
+    display: none !important;
+}
+
+/* Fix: remove fallback numbers (1234) */
+.slick-dots li {
+    font-size: 0 !important;
+    display: inline-block !important;
+    margin: 0 4px;
+}
+
+/* Remove Slick default round dot */
+.slick-dots li button:before {
+    content: "" !important;
+    display: none !important;
+}
+
+/* Base dot */
+.slick-dots li button {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border-radius: 50%;
+    background: #d1d5db;
+    /* grey */
+    border: none;
+    cursor: pointer;
+}
+
+/* Active dot */
+.slick-dots li.slick-active button {
+    background: #1e3a8a !important;
+    /* blue */
+}

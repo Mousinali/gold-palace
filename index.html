@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Gold Palace | Premium Gold & Diamond Jewellery Showroom</title>
+
+    <meta name="description"
+        content="Gold Palace offers exquisite gold, diamond, and bridal jewellery collections. Discover hallmarked gold jewellery, custom designs, wedding collections, and trusted craftsmanship at Gold Palace.">
+
+    <meta name="keywords"
+        content="Gold Palace, gold jewellery showroom, diamond jewellery, bridal jewellery, wedding jewellery, hallmarked gold, jewellery store, gold ornaments, custom jewellery, luxury jewellery">
+
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+
+    <link rel="icon" href="assets/images/logo/favicon.webp" type="image/x-icon">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="assets/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/libs/slick/slick.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+
+    <header class="w-full bg-white border-b border-gray-200">
+        <div class="container">
+            <div class="relative hidden h-20 md:flex items-center">
+
+                <!-- MOBILE MENU ICON (ONLY FOR SMALL SCREENS) -->
+                <button id="menuBtn" class="md:hidden text-2xl text-gray-800">
+                    <i class="ri-menu-3-line"></i>
+                </button>
+
+                <!-- LEFT: NAV (DESKTOP) -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#" class="text-sm tracking-wide hover:text-amber-600 transition">Home</a>
+                    <a href="#" class="text-sm tracking-wide hover:text-amber-600 transition">About Us</a>
+                    <a href="#" class="text-sm tracking-wide hover:text-amber-600 transition">Product</a>
+                    <a href="#" class="text-sm tracking-wide hover:text-amber-600 transition">Contact
+                        Us</a>
+                </nav>
+
+                <!-- CENTER: LOGO (TRUE CENTER - UNCHANGED) -->
+                <div class="absolute left-1/2 -translate-x-1/2">
+                    <a href="#">
+                        <img src="assets/images/logo/gold-logo.webp" class="h-16" alt="">
+                    </a>
+                </div>
+
+                <!-- RIGHT: BUTTON (UNCHANGED STYLE) -->
+                <div class="ml-auto hidden md:block">
+                    <a href="#" class="group relative overflow-hidden px-8 py-3 text-sm tracking-widest uppercase
+                  border border-neutral-900 bg-black text-white inline-block">
+
+                        <span class="relative z-10 group-hover:text-white transition">
+                            Enquiry Now
+                        </span>
+
+                        <span
+                            class="absolute inset-0 bg-yellow-900 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+            <nav class="lg:hidden bg-white flex justify-between items-center py-2">
+                <a href="#"><img src="assets/images/logo/gold-logo.webp" class="h-12" alt=""></a>
+
+                <!-- Hamburger Button -->
+                <div class="flex items-center gap-4 text-3xl">
+                    <i class="ri-whatsapp-line text-green-600 cursor-pointer"></i>
+                    <button id="openMenu" class="p-1" aria-label="Open Menu">
+                        <i class="ri-menu-line cursor-pointer"></i>
+                    </button>
+                </div>
+
+            </nav>
+            <!-- Fullscreen Overlay Menu -->
+            <!-- Mobile Menu Backdrop -->
+            <div id="backdrop" class="fixed inset-0 bg-black/50 opacity-0 invisible transition-all duration-300 z-40">
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu"
+                class="fixed top-0 right-0 bottom-0 w-[320px] bg-white flex flex-col shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+
+                <!-- Header -->
+                <div class="flex justify-between items-center px-5 py-3 border-b border-gray-200">
+                    <img src="assets/images/logo/gold-logo.webp" class="h-[36px]" alt="Logo">
+                    <button id="closeMenu" aria-label="Close Menu" class="cursor-pointer">
+                        <i class="ri-close-line text-3xl text-gray-700 hover:text-red-600"></i>
+                    </button>
+                </div>
+
+                <!-- Menu Items -->
+                <ul class="flex flex-col divide-y divide-dotted divide-gray-300">
+                    <li><a href="index.html"
+                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Home</a>
+                    </li>
+                    <li><a href="about.html"
+                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">About
+                            Us</a>
+                    </li>
+                    <li><a href="#" class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Services</a>
+                    </li>
+                    <li><a href="plan.html"
+                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Plans</a>
+                    </li>
+                    <li><a href="blogs.html"
+                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Health
+                            Blogs</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Contact
+                            Us</a></li>
+                </ul>
+
+                <!-- Contact Info -->
+                <ul class="flex flex-col divide-y divide-dotted divide-gray-300 mt-2 text-sm border-t border-slate-200">
+                    <!-- Phone -->
+                    <li class="block px-5 py-3">
+                        <span class="text-sm font-medium text-gray-800">
+                            Phone
+                        </span>
+                        <p class="mt-1">
+                            <a href="tel:9163261134"
+                                class="text-[var(--primary-color)] hover:underline font-medium">9163261134</a>
+                            <span class="text-gray-500 mx-1">/</span>
+                            <a href="tel:9830126400"
+                                class="text-[var(--primary-color)] hover:underline font-medium">9830126400</a>
+                        </p>
+                    </li>
+
+                    <!-- Email -->
+                    <li class="block px-5 py-3">
+                        <span class="text-sm font-medium text-gray-800">
+                            Email
+                        </span>
+                        <p class="mt-1">
+                            <a href="mailto:info@healgene.life"
+                                class="block text-[var(--primary-color)] hover:underline font-medium">info@healgene.life</a>
+                            <a href="mailto:healgene.life@gmail.com"
+                                class="block text-[var(--primary-color)] hover:underline font-medium mt-2">healgene.life@gmail.com</a>
+                        </p>
+                    </li>
+                    <!-- Corporate Office -->
+                    <li class="block px-5 py-3">
+                        <span class="text-sm font-medium text-gray-800">
+                            Corporate Office
+                        </span>
+                        <p class="mt-1 leading-relaxed text-gray-600">
+                            Regus, RDB Boulevard, 5th Floor, BP Block, Sector V, Bidhannagar,<br>
+                            Kolkata, West Bengal 700091
+                        </p>
+                    </li>
+
+                    <!-- City Office -->
+                    <li class="block px-5 py-3">
+                        <span class="text-sm font-medium text-gray-800">
+                            City Office
+                        </span>
+                        <p class="mt-1 leading-relaxed text-gray-600">
+                            FA-8, 2082, Rajdanga Main Road, Narkelbagan, Sector F, East Kolkata Township,<br>
+                            Kolkata, West Bengal 700107
+                        </p>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </header>
+
+
+    <section class="bg-[url('/assets/images/banner/banner-bg.jpg')] bg-cover bg-center h-[80vh] content-center">
+        <div class="container relative z-10 mx-auto px-6 ">
+            <div class="max-w-xl">
+
+                <!-- Badge -->
+                <span class="inline-block mb-5 px-4 py-1.5 text-xs tracking-[0.3em] uppercase
+               border border-neutral-700/40 text-neutral-700 rounded-full bg-white/70 backdrop-blur">
+                    Exclusive Collection
+                </span>
+
+                <!-- Heading -->
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif leading-[1.1] mb-6 text-neutral-900">
+                    Timeless Gold <br />
+                    <span class="italic font-light text-neutral-700">Jewellery</span>
+                </h1>
+
+                <!-- Divider -->
+                <div class="w-20 h-[2px] bg-gradient-to-r from-amber-500 to-yellow-600 mb-6"></div>
+
+                <!-- Description -->
+                <p class="text-base md:text-lg text-neutral-700 leading-relaxed mb-10">
+                    Discover handcrafted designs that reflect elegance, heritage,
+                    and everlasting beauty.
+                </p>
+
+                <!-- Buttons -->
+                <div class="flex flex-wrap items-center gap-4">
+
+                    <!-- Primary Button -->
+                    <a href="#" class="group relative overflow-hidden px-8 py-3 text-sm tracking-widest uppercase
+                  border border-neutral-900 bg-black text-white">
+
+                        <span class="relative z-10 group-hover:text-white transition">
+                            Shop Now
+                        </span>
+
+                        <span
+                            class="absolute inset-0 bg-yellow-900 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        </span>
+                    </a>
+
+                    <!-- Secondary -->
+                    <a href="#" class="px-8 py-3 text-sm tracking-widest uppercase text-neutral-700
+                  hover:text-neutral-900 underline underline-offset-8 decoration-neutral-400">
+                        Explore Collection
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="lg:py-20 sm:py-12 py-8">
+        <div class="container mx-auto px-6">
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+
+                <!-- LEFT : IMAGE -->
+                <div class="relative">
+                    <img src="assets/images/about/about-img.webp" alt="About Our Jewellery"
+                        class="rounded-2xl object-cover w-full aspect-square" />
+
+                    <!-- Accent box -->
+                    <div
+                        class="absolute -bottom-6 -right-6 bg-white border border-neutral-200 rounded-xl p-6 shadow-lg">
+                        <p class="text-3xl font-serif text-neutral-900">25+</p>
+                        <p class="text-sm text-neutral-600 tracking-wide">
+                            Years of Craftsmanship
+                        </p>
+                    </div>
+                </div>
+
+                <!-- RIGHT : CONTENT -->
+                <div class="w-full">
+
+                    <p class="text-sm tracking-[0.3em] uppercase text-neutral-500 mb-4">
+                        About Us
+                    </p>
+
+                    <h2 class="text-3xl md:text-4xl font-serif text-neutral-900 mb-6 leading-tight">
+                        Celebrating Tradition, <br />
+                        Crafting Timeless Elegance
+                    </h2>
+
+                    <div class="w-16 h-[2px] bg-gradient-to-r from-amber-500 to-yellow-600 mb-6"></div>
+
+                    <p class="text-neutral-700 leading-relaxed mb-6">
+                        For over two decades, we have been dedicated to creating
+                        exquisite gold jewellery that reflects heritage, precision,
+                        and refined craftsmanship. Each piece is thoughtfully designed
+                        to celebrate life’s most meaningful moments.
+                    </p>
+
+                    <p class="text-neutral-700 leading-relaxed mb-8">
+                        From traditional designs rooted in culture to contemporary
+                        styles that embrace modern elegance, our collections are
+                        crafted using ethically sourced gold and meticulous attention
+                        to detail.
+                    </p>
+
+                    <!-- Features -->
+                    <div class="grid grid-cols-2 gap-4 mb-10">
+                        <div class="flex items-center gap-3">
+                            <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
+                            <p class="text-sm text-neutral-700">Certified Gold</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
+                            <p class="text-sm text-neutral-700">Handcrafted Designs</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
+                            <p class="text-sm text-neutral-700">Trusted Legacy</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
+                            <p class="text-sm text-neutral-700">Ethical Sourcing</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="lg:py-20 sm:py-12 py-8 bg-neutral-50">
+        <div class="container">
+
+            <!-- Section Header -->
+            <div class="max-w-2xl mb-14 text-center mx-auto">
+                <p class="text-sm tracking-[0.3em] uppercase text-neutral-500 mb-3">
+                    Our Collection
+                </p>
+
+                <h2 class="text-3xl md:text-4xl font-serif text-neutral-900 mb-4">
+                    Exquisite Jewellery Crafted to Perfection
+                </h2>
+
+                <p class="text-neutral-700 leading-relaxed">
+                    Discover timeless designs made with certified gold, precision craftsmanship,
+                    and elegant detailing for every occasion.
+                </p>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Product Card -->
+                <div
+                    class="group bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl transition">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/product/pro-1.webp" alt="Pipe Bangles"
+                            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500" />
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-lg font-medium text-neutral-900 mb-1">
+                            Pipe Bangles
+                        </h3>
+                        <p class="text-sm text-neutral-600 mb-3">
+                            Elegant Gold Bangles
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Product Card -->
+                <div
+                    class="group bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl transition">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/product/pro-2.webp" alt="Nathiya"
+                            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500" />
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-lg font-medium text-neutral-900 mb-1">
+                            Nathiya
+                        </h3>
+                        <p class="text-sm text-neutral-600 mb-3">
+                            Traditional Nose Ring
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Product Card -->
+                <div
+                    class="group bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl transition">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/product/pro-3.webp" alt="Women Accessories"
+                            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500" />
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-lg font-medium text-neutral-900 mb-1">
+                            Women accessories
+                        </h3>
+                        <p class="text-sm text-neutral-600 mb-3">
+                            Stylish Gold Accessories
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Product Card -->
+                <div
+                    class="group bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl transition">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/product/pro-4.webp" alt="Earrings"
+                            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500" />
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-lg font-medium text-neutral-900 mb-1">
+                            Earrings
+                        </h3>
+                        <p class="text-sm text-neutral-600 mb-3">
+                            Classic Gold Earrings
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Product Card -->
+                <div
+                    class="group bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl transition">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/product/pro-5.webp" alt="Tie Chain"
+                            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500" />
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-lg font-medium text-neutral-900 mb-1">
+                            Tie Chain
+                        </h3>
+                        <p class="text-sm text-neutral-600 mb-3">
+                            Elegant Gold Chain
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Product Card -->
+                <div
+                    class="group bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl transition">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/product/pro-6.webp" alt="Pipe Bangles"
+                            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500" />
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-lg font-medium text-neutral-900 mb-1">
+                            Pipe Bangles 2
+                        </h3>
+                        <p class="text-sm text-neutral-600 mb-3">
+                            Contemporary Gold Bangles
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Product Card -->
+                <div
+                    class="group bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl transition">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/product/pro-7.webp" alt="Pendant"
+                            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500" />
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-lg font-medium text-neutral-900 mb-1">
+                            Pendant
+                        </h3>
+                        <p class="text-sm text-neutral-600 mb-3">
+                            Elegant Gold Pendant
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Product Card -->
+                <div
+                    class="group bg-white border border-neutral-200 rounded-2xl overflow-hidden hover:shadow-xl transition">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/product/pro-8.webp" alt="Women Accessories"
+                            class="w-full h-72 object-cover group-hover:scale-105 transition duration-500" />
+                    </div>
+
+                    <div class="p-6">
+                        <h3 class="text-lg font-medium text-neutral-900 mb-1">
+                            Women accessories 2
+                        </h3>
+                        <p class="text-sm text-neutral-600 mb-3">
+                            Premium Gold Accessories
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="relative lg:py-20 sm:py-12 py-8 bg-white overflow-hidden">
+
+        <div class="container mx-auto px-6 relative z-10">
+
+            <div class="max-w-2xl mb-14 text-center mx-auto">
+                <p class="text-sm tracking-[0.3em] uppercase text-neutral-500 mb-3">
+                    Contact Us
+                </p>
+
+                <h2 class="text-3xl md:text-4xl font-serif text-neutral-900 mb-4">
+                    We’d Love to Hear From You
+                </h2>
+
+                <p class="text-neutral-700 leading-relaxed">
+                    Have a question about our collections or need assistance?
+                    Reach out to us — our team is always happy to help.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-14">
+
+                <!-- LEFT : CONTACT INFO -->
+                <div class="space-y-6">
+
+                    <!-- Card -->
+                    <div class="group relative flex items-start gap-5 p-6 rounded-2xl
+               bg-white border border-neutral-200
+               shadow-sm hover:shadow-lg transition">
+
+                        <!-- Gold Accent Line -->
+
+
+                        <!-- Icon -->
+                        <div class="w-12 h-12 flex items-center justify-center
+                   rounded-xl bg-gradient-to-br from-amber-50 to-amber-100
+                   text-amber-600 shrink-0">
+                            <i class="ri-map-pin-line text-xl"></i>
+                        </div>
+
+                        <!-- Content -->
+                        <div>
+                            <h4 class="text-base font-medium text-neutral-900 mb-1">
+                                Visit Our Store
+                            </h4>
+                            <p class="text-sm text-neutral-600 leading-relaxed">
+                                123 Gold Street, Jewellery Market,<br />
+                                Kolkata, West Bengal – 700001
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="group relative flex items-start gap-5 p-6 rounded-2xl
+               bg-white border border-neutral-200
+               shadow-sm hover:shadow-lg transition">
+
+
+
+                        <div class="w-12 h-12 flex items-center justify-center
+                   rounded-xl bg-gradient-to-br from-amber-50 to-amber-100
+                   text-amber-600 shrink-0">
+                            <i class="ri-phone-line text-xl"></i>
+                        </div>
+
+                        <div>
+                            <h4 class="text-base font-medium text-neutral-900 mb-1">
+                                Call Us
+                            </h4>
+                            <p class="text-sm text-neutral-600 leading-relaxed">
+                                +91 98765 43210<br />
+                                +91 91234 56789
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="group relative flex items-start gap-5 p-6 rounded-2xl
+               bg-white border border-neutral-200
+               shadow-sm hover:shadow-lg transition">
+
+
+
+                        <div class="w-12 h-12 flex items-center justify-center
+                   rounded-xl bg-gradient-to-br from-amber-50 to-amber-100
+                   text-amber-600 shrink-0">
+                            <i class="ri-mail-line text-xl"></i>
+                        </div>
+
+                        <div>
+                            <h4 class="text-base font-medium text-neutral-900 mb-1">
+                                Email Us
+                            </h4>
+                            <p class="text-sm text-neutral-600 leading-relaxed">
+                                support@yourjewellery.com<br />
+                                info@yourjewellery.com
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Business Hours -->
+                    <div class="pt-6 border-t border-neutral-200">
+
+                        <!-- Business Hours -->
+                        <p class="text-xs tracking-[0.3em] uppercase text-neutral-500 mb-2">
+                            Business Hours
+                        </p>
+                        <p class="text-sm text-neutral-700 mb-4">
+                            Mon – Sat: 10:00 AM – 8:00 PM
+                        </p>
+
+                        <!-- Social Icons -->
+                        <div class="flex items-center gap-4">
+
+                            <a href="#" aria-label="Instagram" class="w-10 h-10 flex items-center justify-center
+                  rounded-full border border-neutral-300
+                  text-neutral-600 hover:text-amber-600
+                  hover:border-amber-400 transition">
+                                <i class="ri-instagram-line text-lg"></i>
+                            </a>
+
+                            <a href="#" aria-label="Facebook" class="w-10 h-10 flex items-center justify-center
+                  rounded-full border border-neutral-300
+                  text-neutral-600 hover:text-amber-600
+                  hover:border-amber-400 transition">
+                                <i class="ri-facebook-line text-lg"></i>
+                            </a>
+
+                            <a href="#" aria-label="WhatsApp" class="w-10 h-10 flex items-center justify-center
+                  rounded-full border border-neutral-300
+                  text-neutral-600 hover:text-amber-600
+                  hover:border-amber-400 transition">
+                                <i class="ri-whatsapp-line text-lg"></i>
+                            </a>
+
+                            <a href="#" aria-label="YouTube" class="w-10 h-10 flex items-center justify-center
+                  rounded-full border border-neutral-300
+                  text-neutral-600 hover:text-amber-600
+                  hover:border-amber-400 transition">
+                                <i class="ri-youtube-line text-lg"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- RIGHT : CONTACT FORM -->
+                <div class="bg-white border border-neutral-200 rounded-3xl p-8 md:p-10 shadow-lg">
+
+                    <form class="space-y-6">
+
+                        <div>
+                            <label class="text-sm text-neutral-700 mb-2 block">Full Name</label>
+                            <input type="text" placeholder="Enter your name" class="w-full px-4 py-3 border border-neutral-300 rounded-lg
+                                   focus:outline-none focus:ring-2 focus:ring-amber-500" />
+                        </div>
+
+                        <div>
+                            <label class="text-sm text-neutral-700 mb-2 block">Email Address</label>
+                            <input type="email" placeholder="Enter your email" class="w-full px-4 py-3 border border-neutral-300 rounded-lg
+                                   focus:outline-none focus:ring-2 focus:ring-amber-500" />
+                        </div>
+
+                        <div>
+                            <label class="text-sm text-neutral-700 mb-2 block">Phone Number</label>
+                            <input type="tel" placeholder="Enter your phone number" class="w-full px-4 py-3 border border-neutral-300 rounded-lg
+                                   focus:outline-none focus:ring-2 focus:ring-amber-500" />
+                        </div>
+
+                        <div>
+                            <label class="text-sm text-neutral-700 mb-2 block">Message</label>
+                            <textarea rows="3" placeholder="Write your message" class="w-full px-4 py-3 border border-neutral-300 rounded-lg
+                                   focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+                        </div>
+
+                        <button type="submit" class="group relative overflow-hidden px-8 py-3 text-sm tracking-widest uppercase
+                  border border-neutral-900 bg-black text-white inline-block w-full ">
+
+                            <span class="relative z-10 group-hover:text-white transition">
+                                Send Message
+                            </span>
+
+                            <span
+                                class="absolute inset-0 bg-yellow-900 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            </span>
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="border-t border-neutral-200 bg-black text-white py-4">
+    <div class="container mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+
+        <!-- Left : Copyright -->
+        <p class="text-sm >
+            © <span id="year"></span> Your Jewellery Brand. All rights reserved.
+        </p>
+
+        <!-- Right : Links -->
+        <div class="flex items-center gap-6 text-sm">
+            <a href="#" class="hover:text-neutral-900 transition">
+                Privacy Policy
+            </a>
+            <a href="#" class="hover:text-neutral-900 transition">
+                Terms & Conditions
+            </a>
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div id="bookingModal"
+        class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm transition-opacity duration-500">
+        <div
+            class="relative w-[90%] max-w-lg bg-white rounded-2xl shadow-2xl p-8 sm:p-10 animate-fadeInScale overflow-hidden border border-gray-100">
+
+            <!-- Top Accent -->
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#0d728d] to-[#38bdf8]"></div>
+
+            <!-- Close Button -->
+            <button onclick="closeModal()"
+                class="absolute top-4 cursor-pointer right-4 text-gray-400 hover:text-red-500 text-2xl font-bold leading-none transition"><i
+                    class="ri-close-line"></i></button>
+
+            <!-- Header -->
+            <div class="text-center mb-8">
+                <h3 class="md:text-3xl font-semibold text-[#1b263b] text-xl tracking-tight">Book Appointment</h3>
+                <p class="text-gray-600 mt-2 text-sm max-w-sm mx-auto">
+                    Select your preferred date and time. Our team will confirm your booking shortly.
+                </p>
+            </div>
+
+            <!-- Form -->
+            <form class="space-y-4">
+                <!-- Name -->
+                <div class="relative">
+                    <input type="text" id="fullname"
+                        class="peer wlgull border border-gray-300 rounded-lg w-full px-3 pt-5 pb-2 text-sm bg-white focus:ring-0.75 focus:ring-[#0d728d] focus:border-[#0d728d] outline-none"
+                        placeholder=" " />
+                    <label for="fullname"
+                        class="pointer-events-none absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#0d728d]">Full
+                        Name</label>
+                </div>
+
+                <!-- Email -->
+                <div class="relative">
+                    <input type="email" id="email"
+                        class="peer wlgull border border-gray-300 rounded-lg w-full px-3 pt-5 pb-2 text-sm bg-white focus:ring-0.75 focus:ring-[#0d728d] focus:border-[#0d728d] outline-none"
+                        placeholder=" " />
+                    <label for="email"
+                        class="pointer-events-none absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#0d728d]">Email
+                        Address</label>
+                </div>
+
+                <!-- Phone -->
+                <div class="relative">
+                    <input type="tel" id="phone"
+                        class="peer wlgull border border-gray-300 rounded-lg w-full px-3 pt-5 pb-2 text-sm bg-white focus:ring-0.75 focus:ring-[#0d728d] focus:border-[#0d728d] outline-none"
+                        placeholder=" " />
+                    <label for="phone"
+                        class="pointer-events-none absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#0d728d]">Phone
+                        Number</label>
+                </div>
+
+                <!-- Date Picker -->
+                <div class="relative">
+                    <input type="date" id="date"
+                        class="peer wlgull border border-gray-300 rounded-lg w-full px-3 pt-5 pb-2 text-sm bg-white focus:ring-0.75 focus:ring-[#0d728d] focus:border-[#0d728d] outline-none appearance-none"
+                        placeholder=" " />
+                    <label for="date"
+                        class="pointer-events-none absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#0d728d]">Preferred
+                        Date</label>
+
+
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="w-full btn1 !py-3 mt-4 justify-center">
+                    Confirm Appointment
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/libs/jquery/jquery-3.7.1.min.js"></script>
+    <script src="assets/libs/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <!-- <script src="assets/js/script.js"></script> -->
+    <script>
+        const openBtn = document.getElementById("openMenu");
+        const closeBtn = document.getElementById("closeMenu");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const backdrop = document.getElementById("backdrop");
+        const body = document.body;
+
+        openBtn.addEventListener("click", () => {
+            mobileMenu.classList.remove("translate-x-full");
+            mobileMenu.classList.add("translate-x-0");
+            backdrop.classList.remove("opacity-0", "invisible");
+            backdrop.classList.add("opacity-100", "visible");
+
+            // Disable scrolling
+            body.classList.add("overflow-hidden");
+        });
+
+        closeBtn.addEventListener("click", closeMenuHandler);
+        backdrop.addEventListener("click", closeMenuHandler);
+
+        function closeMenuHandler() {
+            mobileMenu.classList.add("translate-x-full");
+            mobileMenu.classList.remove("translate-x-0");
+            backdrop.classList.add("opacity-0", "invisible");
+            backdrop.classList.remove("opacity-100", "visible");
+
+            // Re-enable scrolling
+            body.classList.remove("overflow-hidden");
+        }
+    </script>
+
+    <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+
+
+
+</body>
+
+</html>
