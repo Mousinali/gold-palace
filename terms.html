@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Gold Palace | Premium Gold & Diamond Jewellery Showroom</title>
+
+    <meta name="description"
+        content="Gold Palace offers exquisite gold, diamond, and bridal jewellery collections. Discover hallmarked gold jewellery, custom designs, wedding collections, and trusted craftsmanship at Gold Palace.">
+
+    <meta name="keywords"
+        content="Gold Palace, gold jewellery showroom, diamond jewellery, bridal jewellery, wedding jewellery, hallmarked gold, jewellery store, gold ornaments, custom jewellery, luxury jewellery">
+
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+    <link rel="icon" href="assets/images/logo/favicon.webp" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="w-full bg-white border-b border-gray-200">
+        <div class="container">
+            <div class="relative hidden h-20 md:flex items-center">
+
+                <!-- MOBILE MENU ICON (ONLY FOR SMALL SCREENS) -->
+                <button id="menuBtn" class="md:hidden text-2xl text-gray-800">
+                    <i class="ri-menu-3-line"></i>
+                </button>
+
+                <!-- LEFT: NAV (DESKTOP) -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="index.html"
+                        class="text-sm tracking-wide scroll-link hover:text-amber-600 transition">Home</a>
+                    <a href="index.html#about"
+                        class="text-sm tracking-wide scroll-link hover:text-amber-600 transition">About
+                        Us</a>
+                    <a href="index.html#product"
+                        class="text-sm tracking-wide scroll-link hover:text-amber-600 transition">Product</a>
+                    <a href="index.html#contact"
+                        class="text-sm tracking-wide scroll-link hover:text-amber-600 transition">Contact
+                        Us</a>
+                </nav>
+
+                <!-- CENTER: LOGO (TRUE CENTER - UNCHANGED) -->
+                <div class="absolute left-1/2 -translate-x-1/2">
+                    <a href="#">
+                        <img src="assets/images/logo/gold-logo.webp" class="h-16" alt="">
+                    </a>
+                </div>
+
+                <!-- RIGHT: BUTTON (UNCHANGED STYLE) -->
+                <div class="ml-auto hidden md:block">
+                    <a href="#" class="group relative overflow-hidden px-8 py-3 text-sm tracking-widest uppercase
+                  border border-neutral-900 bg-black text-white inline-block">
+
+                        <span class="relative z-10 group-hover:text-white transition">
+                            Enquiry Now
+                        </span>
+
+                        <span
+                            class="absolute inset-0 bg-yellow-900 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        </span>
+                    </a>
+                </div>
+
+            </div>
+            <nav class="lg:hidden bg-white flex justify-between items-center py-2">
+                <a href="#"><img src="assets/images/logo/gold-logo.webp" class="h-12" alt=""></a>
+
+                <!-- Hamburger Button -->
+                <div class="flex items-center gap-4 text-3xl">
+                    <i class="ri-whatsapp-line text-green-600 cursor-pointer"></i>
+                    <button id="openMenu" class="p-1" aria-label="Open Menu">
+                        <i class="ri-menu-line cursor-pointer"></i>
+                    </button>
+                </div>
+
+            </nav>
+            <!-- Fullscreen Overlay Menu -->
+            <!-- Mobile Menu Backdrop -->
+            <div id="backdrop" class="fixed inset-0 bg-black/50 opacity-0 invisible transition-all duration-300 z-40">
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu"
+                class="fixed top-0 right-0 bottom-0 w-[320px] bg-white flex flex-col shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+
+                <!-- Header -->
+                <div class="flex justify-between items-center px-5 py-3 border-b border-gray-200">
+                    <img src="assets/images/logo/gold-logo.webp" class="h-[36px]" alt="Logo">
+                    <button id="closeMenu" aria-label="Close Menu" class="cursor-pointer">
+                        <i class="ri-close-line text-3xl text-gray-700 hover:text-red-600"></i>
+                    </button>
+                </div>
+
+                <!-- Menu Items -->
+                <ul class="flex flex-col divide-y divide-dotted divide-gray-300">
+                    <li><a href="index.html#home"
+                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)] scroll-link">Home</a>
+                    </li>
+                    <li><a href="index.html#about"
+                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)] scroll-link">About
+                            Us</a>
+                    </li>
+                    <li><a href="index.html#product"
+                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)] scroll-link">Product</a>
+                    </li>
+                    <li><a href="index.html#contact"
+                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)] scroll-link">Contact
+                            Us</a>
+                    </li>
+                </ul>
+
+                <!-- Contact Info -->
+                <ul class="flex flex-col divide-y divide-dotted divide-gray-300 mt-2 text-sm border-t border-slate-200">
+                    <!-- Phone -->
+                    <li class="block px-5 py-3">
+                        <span class="text-sm font-medium text-gray-800">
+                            Phone
+                        </span>
+                        <p class="mt-1">
+                            <a href="tel:9163261134" class="text-[var(--primary-color)] hover:underline font-medium">+91
+                                12345 67890</a>
+                        </p>
+                    </li>
+
+                    <!-- Email -->
+                    <li class="block px-5 py-3">
+                        <span class="text-sm font-medium text-gray-800">
+                            Email
+                        </span>
+                        <p class="mt-1">
+                            <a href="mailto:"
+                                class="block text-[var(--primary-color)] hover:underline font-medium">info@test.life</a>
+                            <a href="mailto:"
+                                class="block text-[var(--primary-color)] hover:underline font-medium mt-2">test@gmail.com</a>
+                        </p>
+                    </li>
+                    <!-- Corporate Office -->
+                    <li class="block px-5 py-3">
+                        <span class="text-sm font-medium text-gray-800">
+                            Corporate Office
+                        </span>
+                        <p class="mt-1 leading-relaxed text-gray-600">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.,<br>
+                            Kolkata, West Bengal 700091
+                        </p>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <main class="pb-16">
+
+        <!-- BREADCRUMB -->
+        <div class="w-full py-3 mb-6 bg-gray-100">
+            <div class="container">
+                <nav class="text-sm text-neutral-500 flex items-center gap-2">
+                    <a href="index.html" class="hover:text-amber-600 transition">
+                        Home
+                    </a>
+                    <span>/</span>
+                    <span class="text-neutral-700 font-medium">
+                        Terms & Conditions
+                    </span>
+                </nav>
+            </div>
+        </div>
+
+        <!-- CONTENT CARD -->
+        <div class="container">
+            <div class="bg-white">
+
+                <!-- TITLE -->
+                <h1 class="text-2xl sm:text-3xl font-semibold text-neutral-900 mb-6">
+                    Terms & Conditions
+                </h1>
+
+                <p class="text-sm text-neutral-600 mb-8">
+                    These Terms and Conditions govern the use of this website.
+                    By accessing or using this website, you agree to these terms.
+                    If you do not agree, you should stop using it immediately.
+                </p>
+
+                <!-- CONTENT -->
+                <section class="space-y-6">
+
+                    <div>
+                        <h2 class="text-lg font-semibold text-neutral-900 mb-2">
+                            Website Usage
+                        </h2>
+                        <p class="text-sm text-neutral-700 leading-relaxed">
+                            This website exists for browsing and informational purposes only.
+                            Users must use the website responsibly and within lawful limits.
+                            Any misuse or attempt to disrupt access is prohibited.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-lg font-semibold text-neutral-900 mb-2">
+                            Product Information
+                        </h2>
+                        <p class="text-sm text-neutral-700 leading-relaxed">
+                            All product images and descriptions serve reference purposes only.
+                            Actual products may vary in appearance and design.
+                            Product availability may change at any time.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-lg font-semibold text-neutral-900 mb-2">
+                            Pricing and Accuracy
+                        </h2>
+                        <p class="text-sm text-neutral-700 leading-relaxed">
+                            Prices shown are indicative and may change without notice.
+                            We aim to maintain accuracy, yet errors may occur.
+                            Such errors do not create binding obligations.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-lg font-semibold text-neutral-900 mb-2">
+                            Intellectual Property
+                        </h2>
+                        <p class="text-sm text-neutral-700 leading-relaxed">
+                            All website content belongs exclusively to the brand.
+                            This includes text and images across platforms.
+                            Unauthorized copying or use is strictly prohibited.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-lg font-semibold text-neutral-900 mb-2">
+                            User Submissions
+                        </h2>
+                        <p class="text-sm text-neutral-700 leading-relaxed">
+                            Information submitted must be accurate and lawful.
+                            Submitted data may be used for communication purposes.
+                            Users must avoid submitting harmful or misleading content.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-lg font-semibold text-neutral-900 mb-2">
+                            Third Party Links
+                        </h2>
+                        <p class="text-sm text-neutral-700 leading-relaxed">
+                            This website may include links to external websites.
+                            We do not control external content or policies.
+                            Responsibility for third-party content lies externally.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-lg font-semibold text-neutral-900 mb-2">
+                            Limitation of Liability
+                        </h2>
+                        <p class="text-sm text-neutral-700 leading-relaxed">
+                            We are not liable for losses from website use.
+                            Website usage occurs at the user’s own risk.
+                            No warranties are provided or implied.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-lg font-semibold text-neutral-900 mb-2">
+                            Privacy
+                        </h2>
+                        <p class="text-sm text-neutral-700 leading-relaxed">
+                            User information is handled under the Privacy Policy.
+                            Website usage implies consent to data practices.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-lg font-semibold text-neutral-900 mb-2">
+                            Changes to Terms
+                        </h2>
+                        <p class="text-sm text-neutral-700 leading-relaxed">
+                            Terms may change at any time without notice.
+                            Continued website use implies acceptance of changes.
+                            Users should review terms periodically.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-lg font-semibold text-neutral-900 mb-2">
+                            Governing Law
+                        </h2>
+                        <p class="text-sm text-neutral-700 leading-relaxed">
+                            These terms follow applicable local laws.
+                            Disputes fall under local legal jurisdiction.
+                        </p>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="border-t border-neutral-200 bg-black text-white py-4">
+        <div class="container mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+
+            <!-- Left : Copyright -->
+            <p class="text-sm "">
+            © <span id="year"></span> Your Jewellery Brand. All rights reserved.
+            </p>
+
+            <!-- Right : Links -->
+            <div class="flex items-center gap-6 text-sm">
+                <a href="privacy.html" class="hover:text-yellow-300 transition">
+                    Privacy Policy
+                </a>
+                <a href="terms.html" class="hover:text-yellow-300 transition">
+                    Terms & Conditions
+                </a>
+            </div>
+
+        </div>
+    </footer>
+    <script>
+        var nav = document.querySelector("header");
+        window.onscroll = function () {
+            if (document.documentElement.scrollTop > 50) {
+                nav.classList.add("scroll-on");
+            } else {
+                nav.classList.remove("scroll-on");
+            }
+        };
+    </script>
+    <script>
+        const openBtn = document.getElementById("openMenu");
+        const closeBtn = document.getElementById("closeMenu");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const backdrop = document.getElementById("backdrop");
+        const body = document.body;
+
+        openBtn.addEventListener("click", () => {
+            mobileMenu.classList.remove("translate-x-full");
+            mobileMenu.classList.add("translate-x-0");
+            backdrop.classList.remove("opacity-0", "invisible");
+            backdrop.classList.add("opacity-100", "visible");
+
+            // Disable scrolling
+            body.classList.add("overflow-hidden");
+        });
+
+        closeBtn.addEventListener("click", closeMenuHandler);
+        backdrop.addEventListener("click", closeMenuHandler);
+
+        function closeMenuHandler() {
+            mobileMenu.classList.add("translate-x-full");
+            mobileMenu.classList.remove("translate-x-0");
+            backdrop.classList.add("opacity-0", "invisible");
+            backdrop.classList.remove("opacity-100", "visible");
+
+            // Re-enable scrolling
+            body.classList.remove("overflow-hidden");
+        }
+    </script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>

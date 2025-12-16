@@ -14,21 +14,9 @@
         content="Gold Palace, gold jewellery showroom, diamond jewellery, bridal jewellery, wedding jewellery, hallmarked gold, jewellery store, gold ornaments, custom jewellery, luxury jewellery">
 
     <meta http-equiv="Cache-Control" content="public, max-age=31536000">
-
     <link rel="icon" href="assets/images/logo/favicon.webp" type="image/x-icon">
-
-    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!-- Plugins -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
-    <link rel="stylesheet" href="assets/libs/slick/slick-theme.css">
-    <link rel="stylesheet" href="assets/libs/slick/slick.css">
-
-    <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -47,10 +35,12 @@
 
                 <!-- LEFT: NAV (DESKTOP) -->
                 <nav class="hidden md:flex items-center gap-8">
-                    <a href="#" class="text-sm tracking-wide hover:text-amber-600 transition">Home</a>
-                    <a href="#" class="text-sm tracking-wide hover:text-amber-600 transition">About Us</a>
-                    <a href="#" class="text-sm tracking-wide hover:text-amber-600 transition">Product</a>
-                    <a href="#" class="text-sm tracking-wide hover:text-amber-600 transition">Contact
+                    <a href="#home" class="text-sm tracking-wide scroll-link hover:text-amber-600 transition">Home</a>
+                    <a href="#about" class="text-sm tracking-wide scroll-link hover:text-amber-600 transition">About
+                        Us</a>
+                    <a href="#product"
+                        class="text-sm tracking-wide scroll-link hover:text-amber-600 transition">Product</a>
+                    <a href="#contact" class="text-sm tracking-wide scroll-link hover:text-amber-600 transition">Contact
                         Us</a>
                 </nav>
 
@@ -108,25 +98,20 @@
 
                 <!-- Menu Items -->
                 <ul class="flex flex-col divide-y divide-dotted divide-gray-300">
-                    <li><a href="index.html"
-                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Home</a>
+                    <li><a href="#home"
+                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)] scroll-link">Home</a>
                     </li>
-                    <li><a href="about.html"
-                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">About
+                    <li><a href="#about"
+                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)] scroll-link">About
                             Us</a>
                     </li>
-                    <li><a href="#" class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Services</a>
+                    <li><a href="#product"
+                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)] scroll-link">Product</a>
                     </li>
-                    <li><a href="plan.html"
-                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Plans</a>
+                    <li><a href="#contact"
+                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)] scroll-link">Contact
+                            Us</a>
                     </li>
-                    <li><a href="blogs.html"
-                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Health
-                            Blogs</a>
-                    </li>
-                    <li><a href="contact.html"
-                            class="block px-5 py-3 text-gray-800 hover:text-[var(--primary-color)]">Contact
-                            Us</a></li>
                 </ul>
 
                 <!-- Contact Info -->
@@ -137,11 +122,8 @@
                             Phone
                         </span>
                         <p class="mt-1">
-                            <a href="tel:9163261134"
-                                class="text-[var(--primary-color)] hover:underline font-medium">9163261134</a>
-                            <span class="text-gray-500 mx-1">/</span>
-                            <a href="tel:9830126400"
-                                class="text-[var(--primary-color)] hover:underline font-medium">9830126400</a>
+                            <a href="tel:9163261134" class="text-[var(--primary-color)] hover:underline font-medium">+91
+                                12345 67890</a>
                         </p>
                     </li>
 
@@ -151,10 +133,10 @@
                             Email
                         </span>
                         <p class="mt-1">
-                            <a href="mailto:info@healgene.life"
-                                class="block text-[var(--primary-color)] hover:underline font-medium">info@healgene.life</a>
-                            <a href="mailto:healgene.life@gmail.com"
-                                class="block text-[var(--primary-color)] hover:underline font-medium mt-2">healgene.life@gmail.com</a>
+                            <a href="mailto:"
+                                class="block text-[var(--primary-color)] hover:underline font-medium">info@test.life</a>
+                            <a href="mailto:"
+                                class="block text-[var(--primary-color)] hover:underline font-medium mt-2">test@gmail.com</a>
                         </p>
                     </li>
                     <!-- Corporate Office -->
@@ -163,19 +145,8 @@
                             Corporate Office
                         </span>
                         <p class="mt-1 leading-relaxed text-gray-600">
-                            Regus, RDB Boulevard, 5th Floor, BP Block, Sector V, Bidhannagar,<br>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.,<br>
                             Kolkata, West Bengal 700091
-                        </p>
-                    </li>
-
-                    <!-- City Office -->
-                    <li class="block px-5 py-3">
-                        <span class="text-sm font-medium text-gray-800">
-                            City Office
-                        </span>
-                        <p class="mt-1 leading-relaxed text-gray-600">
-                            FA-8, 2082, Rajdanga Main Road, Narkelbagan, Sector F, East Kolkata Township,<br>
-                            Kolkata, West Bengal 700107
                         </p>
                     </li>
 
@@ -187,7 +158,8 @@
     </header>
 
 
-    <section class="bg-[url('/assets/images/banner/banner-bg.jpg')] bg-cover bg-center h-[80vh] content-center">
+    <section class="bg-[url('assets/images/banner/banner-bg.jpg')] bg-cover bg-center h-[80vh] content-center"
+        id="home">
         <div class="container relative z-10 mx-auto px-6 ">
             <div class="max-w-xl">
 
@@ -241,7 +213,7 @@
     </section>
 
 
-    <section class="lg:py-20 sm:py-12 py-8">
+    <section class="lg:py-20 sm:py-12 py-8" id="about">
         <div class="container mx-auto px-6">
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
@@ -317,7 +289,7 @@
     </section>
 
 
-    <section class="lg:py-20 sm:py-12 py-8 bg-neutral-50">
+    <section class="lg:py-20 sm:py-12 py-8 bg-neutral-50" id="product">
         <div class="container">
 
             <!-- Section Header -->
@@ -487,7 +459,7 @@
         </div>
     </section>
 
-    <section class="relative lg:py-20 sm:py-12 py-8 bg-white overflow-hidden">
+    <section class="relative lg:py-20 sm:py-12 py-8 bg-white overflow-hidden" id="contact">
 
         <div class="container mx-auto px-6 relative z-10">
 
@@ -687,119 +659,56 @@
 
 
     <footer class="border-t border-neutral-200 bg-black text-white py-4">
-    <div class="container mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div class="container mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
 
-        <!-- Left : Copyright -->
-        <p class="text-sm >
+            <!-- Left : Copyright -->
+            <p class="text-sm "">
             © <span id="year"></span> Your Jewellery Brand. All rights reserved.
-        </p>
+            </p>
 
-        <!-- Right : Links -->
-        <div class="flex items-center gap-6 text-sm">
-            <a href="#" class="hover:text-neutral-900 transition">
-                Privacy Policy
-            </a>
-            <a href="#" class="hover:text-neutral-900 transition">
-                Terms & Conditions
-            </a>
-        </div>
-
-    </div>
-</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Modal -->
-    <div id="bookingModal"
-        class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 backdrop-blur-sm transition-opacity duration-500">
-        <div
-            class="relative w-[90%] max-w-lg bg-white rounded-2xl shadow-2xl p-8 sm:p-10 animate-fadeInScale overflow-hidden border border-gray-100">
-
-            <!-- Top Accent -->
-            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#0d728d] to-[#38bdf8]"></div>
-
-            <!-- Close Button -->
-            <button onclick="closeModal()"
-                class="absolute top-4 cursor-pointer right-4 text-gray-400 hover:text-red-500 text-2xl font-bold leading-none transition"><i
-                    class="ri-close-line"></i></button>
-
-            <!-- Header -->
-            <div class="text-center mb-8">
-                <h3 class="md:text-3xl font-semibold text-[#1b263b] text-xl tracking-tight">Book Appointment</h3>
-                <p class="text-gray-600 mt-2 text-sm max-w-sm mx-auto">
-                    Select your preferred date and time. Our team will confirm your booking shortly.
-                </p>
+            <!-- Right : Links -->
+            <div class="flex items-center gap-6 text-sm">
+                <a href="privacy.html" class="hover:text-yellow-300 transition">
+                    Privacy Policy
+                </a>
+                <a href="terms.html" class="hover:text-yellow-300 transition">
+                    Terms & Conditions
+                </a>
             </div>
 
-            <!-- Form -->
-            <form class="space-y-4">
-                <!-- Name -->
-                <div class="relative">
-                    <input type="text" id="fullname"
-                        class="peer wlgull border border-gray-300 rounded-lg w-full px-3 pt-5 pb-2 text-sm bg-white focus:ring-0.75 focus:ring-[#0d728d] focus:border-[#0d728d] outline-none"
-                        placeholder=" " />
-                    <label for="fullname"
-                        class="pointer-events-none absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#0d728d]">Full
-                        Name</label>
-                </div>
-
-                <!-- Email -->
-                <div class="relative">
-                    <input type="email" id="email"
-                        class="peer wlgull border border-gray-300 rounded-lg w-full px-3 pt-5 pb-2 text-sm bg-white focus:ring-0.75 focus:ring-[#0d728d] focus:border-[#0d728d] outline-none"
-                        placeholder=" " />
-                    <label for="email"
-                        class="pointer-events-none absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#0d728d]">Email
-                        Address</label>
-                </div>
-
-                <!-- Phone -->
-                <div class="relative">
-                    <input type="tel" id="phone"
-                        class="peer wlgull border border-gray-300 rounded-lg w-full px-3 pt-5 pb-2 text-sm bg-white focus:ring-0.75 focus:ring-[#0d728d] focus:border-[#0d728d] outline-none"
-                        placeholder=" " />
-                    <label for="phone"
-                        class="pointer-events-none absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#0d728d]">Phone
-                        Number</label>
-                </div>
-
-                <!-- Date Picker -->
-                <div class="relative">
-                    <input type="date" id="date"
-                        class="peer wlgull border border-gray-300 rounded-lg w-full px-3 pt-5 pb-2 text-sm bg-white focus:ring-0.75 focus:ring-[#0d728d] focus:border-[#0d728d] outline-none appearance-none"
-                        placeholder=" " />
-                    <label for="date"
-                        class="pointer-events-none absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-[#0d728d]">Preferred
-                        Date</label>
-
-
-                </div>
-
-                <!-- Submit -->
-                <button type="submit" class="w-full btn1 !py-3 mt-4 justify-center">
-                    Confirm Appointment
-                </button>
-            </form>
         </div>
-    </div>
+    </footer>
+    <script>
+        var nav = document.querySelector("header");
+        window.onscroll = function () {
+            if (document.documentElement.scrollTop > 100) {
+                nav.classList.add("scroll-on");
+            } else {
+                nav.classList.remove("scroll-on");
+            }
+        };
+    </script>
+    <script>
+        document.querySelectorAll('.scroll-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
 
-    <script src="assets/libs/jquery/jquery-3.7.1.min.js"></script>
-    <script src="assets/libs/slick/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-    <!-- <script src="assets/js/script.js"></script> -->
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+
+                if (!target) return;
+
+                const offset = 50; // header height
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = targetPosition - offset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
     <script>
         const openBtn = document.getElementById("openMenu");
         const closeBtn = document.getElementById("closeMenu");
@@ -830,10 +739,9 @@
             body.classList.remove("overflow-hidden");
         }
     </script>
-
     <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
 
 
